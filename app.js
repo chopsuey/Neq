@@ -1,39 +1,64 @@
 Ext.application({
     name: 'Sencha',
-
     launch: function() {
         Ext.create("Ext.TabPanel", {
             fullscreen: true,
             tabBarPosition: 'bottom',
-
+		 layout: {
+        align: 'center'
+    },
             items: [
                 {
-                    title: 'Neq Healthcare',
+                    title: 'Login',
                     iconCls: 'home',
                     cls: 'home',
                     html: [
-                        '<img width="65%" src="neq.png" />',
-                        '<h1>Welcome NEQ Healthcare/h1>'
-                    ].join("")
-                },
-                {
-                    xtype: 'list',
-                    title: 'Blog',
+                        '<img width="100%" src="neq.png" />',
+                        '<h1>Login</h1>'
+                    ].join(""),
+		items: [
+{
+            xtype: 'textfield',
+            name : 'name',
+            label: 'Name'
+        },
+        {
+            xtype: 'emailfield',
+            name : 'email',
+            label: 'Email'
+        },
+        {
+            xtype: 'passwordfield',
+            name : 'password',
+            label: 'Password'
+        },
+	{
+        xtype: 'button',
+        margin: 5,
+	ui: 'normal', text: 'Submit',
+	width: 100
+	}	
+]
+},
+	{
+			xtype: 'list',
+			title: 'Favourites',
                     iconCls: 'star',
 
-                    itemTpl: '{title}',
+			itemTpl: '{title}',
                     store: {
                         fields: ['title', 'url'],
                         data: [
-                            {title: 'Ext Scheduler 2.0', url: 'ext-scheduler-2-0-upgrading-to-ext-js-4'},
-                            {title: 'Previewing Sencha Touch 2', url: 'sencha-touch-2-what-to-expect'},
-                            {title: 'Sencha Con 2011', url: 'senchacon-2011-now-packed-with-more-goodness'},
-                            {title: 'Documentation in Ext JS 4', url: 'new-ext-js-4-documentation-center'}
+                            {title: 'Patients', url: ''},
+                            {title: 'Doctors', url: ''},
+                            {title: 'Hospitals', url: ''},
+                            {title: 'Diagnosis', url: ''}
                         ]
                     }
                 }
+
             ]
-        }).setActiveItem(1);
+        }).setActiveItem(0);
     }
 });
 
