@@ -55,3 +55,80 @@ Ext.define('Neq.view.login.Login', {
         ]
     }
 });
+
+/*
+Ext.define('MyApp.view.ui.NeqViewport', {
+    extend: 'Ext.container.Viewport',
+
+    layout: {
+        type: 'fit'
+    },
+
+    initComponent: function() {
+        var me = this;
+
+        Ext.applyIf(me, {
+            items: [
+                {
+                    xtype: 'form',
+                    bodyPadding: 10,
+                    title: 'Login',
+                    items: [
+                        {
+                            xtype: 'image',
+                            cls: 'align: center;',
+                            height: 120,
+                            width: 120,
+                            src: 'http://www.sencha.com/img/sencha-large.png',
+                            anchor: '20%'
+                        },
+                        {
+                            xtype: 'displayfield',
+                            value: 'Display Field',
+                            fieldLabel: 'Name',
+                            anchor: '100%'
+                        },
+                        {
+                            xtype: 'displayfield',
+                            value: 'Display Field',
+                            fieldLabel: 'Password',
+                            anchor: '100%'
+                        },
+                        {
+                            xtype: 'combobox',
+                            fieldLabel: 'Server',
+                            anchor: '100%'
+                        },
+                        {
+                            xtype: 'button',
+                            text: 'Login',
+                            anchor: '20%'
+                        },
+                        {
+                            xtype: 'button',
+                            text: 'Edit Serverlist',
+                            anchor: '20%'
+                        }
+                    ],
+                    dockedItems: [
+                        {
+                            xtype: 'datefield',
+                            fieldLabel: '',
+                            anchor: '20%',
+                            dock: 'right'
+                        },
+                        {
+                            xtype: 'timefield',
+                            fieldLabel: '',
+                            anchor: '100%',
+                            dock: 'right'
+                        }
+                    ]
+                }
+            ]
+        });
+
+        me.callParent(arguments);
+    }
+});
+*/

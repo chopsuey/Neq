@@ -1,23 +1,29 @@
 Ext.define('Neq.controller.Main', {
     extend: 'Ext.app.Controller',
-    
-    views: ['login.Login', 'Home', 'Products', 'Blog', 'Contact'],
-    
+	
+	//controllers: ['login.Login'],
+	
+    // views: ['login.Login'],    
+//    views: ['login.Login', 'Home', 'Products', 'Blog', 'Contact'],
+/*    
     refs: [
         {
             ref: 'contactForm',
             selector: '#contactForm'
         }
     ],
-    
+*/    
     init: function() {
-        this.control({
+/*        this.control({		// Event Handler on submit / Listener
             'button[action=submitContact]': {
                 tap: 'submitContactForm'
             }
         });
-    },
-    
+*/
+    }//,
+
+/*  
+// action for listener    
     submitContactForm: function() {
         var form = this.getContactForm();
         
@@ -25,4 +31,5 @@ Ext.define('Neq.controller.Main', {
             url: 'contact.php'
         });
     }
+*/
 });

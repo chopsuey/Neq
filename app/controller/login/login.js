@@ -1,5 +1,7 @@
-Ext.define('Neq.controller.Main', {
+Ext.define('Neq.controller.login.Login', {
+    
     extend: 'Ext.app.Controller',
     
-    views: ['Home', 'Login']
+    views: ['login.Login']
+
 });
