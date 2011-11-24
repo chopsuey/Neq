@@ -1,0 +1,19 @@
+{
+    'success': true,
+    'results': [
+        {
+            'sid':			0,
+            'profilename': 	'NEQ Healthcare Theilemann',
+            'hosturl':		'theilemann.dyndns.org',
+            'port':			8000
+            'database':		'devel_01'
+        },
+        {
+            'sid':			1,
+            'profilename': 	'NEQ Healthcare Uni Mannheim',
+            'hosturl':		'neq.uni-mannheim.de',
+            'port':			8000
+            'database':		'devel_01'
+        }
+    ]
+}
