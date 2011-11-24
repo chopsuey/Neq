@@ -7,7 +7,7 @@ Ext.define('Neq.view.Viewport', {
         
         items: [
             {
-            	xtype: 'loginpage'
+            	xtype: 'loginform'
             }/*,
             {
                 xtype: 'homepanel'
