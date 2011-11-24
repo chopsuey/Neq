@@ -1,0 +1,17 @@
+{
+    'success': true,
+    'results': [
+        {
+            'id':		0,
+            'name': 	'Test',
+            'password': 'test',
+            'rights':	'rwx-rwx-rwx'
+        },
+        {
+            'id':		1,
+    	    'name': 	'Admin',
+	        'password': 'admin',
+	        'rights':	'rwx-rwx-rwx'
+        }
+    ]
+}
