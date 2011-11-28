@@ -1,7 +1,7 @@
 Ext.define('Neq.controller.Main', {
     extend: 'Ext.app.Controller',
     
-    views: ['login.Login', 'Home', 'Products', 'Blog', 'Contact'],
+    views: ['login.Login', 'login.ServerProfile', 'Home', 'Products', 'Blog', 'Contact'],
     
     refs: [
         {

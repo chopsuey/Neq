@@ -7,7 +7,9 @@ Ext.application({
     
     controllers: ['Main'],
     
+    autoCreateViewport: true,
+    
     launch: function() {
-        Ext.create('Neq.view.Viewport');
+        //Ext.create('Neq.view.Viewport');
     }
 });

@@ -7,19 +7,22 @@ Ext.define('Neq.view.login.Login', {
     config: {
         title: 'Login',
         iconCls: 'user',
+        cls: 'Login',
         
         layout: {
-            type: 'vbox'
+            type: 'vbox',
+            align: 'center'
         },
         
         items: [
             {
             	html: [
-                	'<img src="images/ci/neq.png" height="60px" width="150px" />',
-                	'<h1>Welcome to NEQ Mobile Healthcare Application!</h1>',
+                	'<h1>Welcome to</h1>',
+                	'<img src="images/ci/neq.png" height="148px" width="240px" />',
+                	'<h1>NEQ Mobile Healthcare Application!</h1>',
                 	"<p>Please login for accessing further Data.</p>",
-                	'<br /><h4>NEQ MHA (0.0.1pr1)</h4>'
-            	].join("")
+            		'<br /><img src="images/user/defaultUser.png" height="100px" width="100px" />'
+            		].join("")
             },
             {   
                 xtype: 'fieldset',
@@ -41,7 +44,12 @@ Ext.define('Neq.view.login.Login', {
                     {
                         xtype: 'selectfield',
                         label: 'Server',
-                        name: 'server'
+                        name: 'server',
+                        options:
+                        [
+                        	{ text: 'NEQ Healthcare Theilemann ', value: 'first' },
+                        	{ text: 'Uni Mannheim', value: 'second' }                        	
+                        ]
                     }
                 ]
             },

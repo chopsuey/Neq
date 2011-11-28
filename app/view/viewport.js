@@ -8,10 +8,10 @@ Ext.define('Neq.view.Viewport', {
         items: [
             {
             	xtype: 'loginpage'
-            }/*,
-            {
-                xtype: 'homepanel'
             },
+            {
+                xtype: 'serverProfile'
+            }/*,
             {
                 xtype: 'productspage'
             },
